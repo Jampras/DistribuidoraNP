@@ -871,11 +871,12 @@ footer {
         font-size: 0.85rem;
         padding: 10px;
         line-height: 1.4;
+        margin-bottom: 20px;
     }
 
-    /* Sections */
+    /* Section Padding */
     .section-padding {
-        padding: 60px 0;
+        padding: 60px 20px;
     }
 
     .section-header {
@@ -896,6 +897,22 @@ footer {
         background:
             linear-gradient(rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.95)),
             url('../assets/backgrounds/products-pattern.png') center/400px repeat;
+        position: relative;
+        z-index: 1;
+        overflow: visible;
+    }
+
+    #catalog .section-header {
+        position: relative;
+        z-index: 2;
+        background: none;
+        margin-bottom: 30px;
+    }
+
+    #catalog .carousel-wrapper {
+        position: relative;
+        z-index: 1;
+        margin-top: 0;
     }
 
     /* --- Product Grid --- */
@@ -921,6 +938,7 @@ footer {
         position: relative;
         width: 100%;
         overflow: hidden;
+        margin-top: 20px;
         margin-bottom: 30px;
     }
 
